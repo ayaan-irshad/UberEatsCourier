@@ -30,13 +30,16 @@ export default function App() {
 					source={{ uri: order.Restaurant.image }}
 					style={{ width: 50, height: 50 }}
 				/>
-				<View>
-					<Text>{order.Restaurant.name}</Text>
-					<Text>{order.Restaurant.address}</Text>
-					<Text>Delivery Details:</Text>
-					<Text>{order.User.name}</Text>
-					<Text>{order.User.address}</Text>
+				<View style={{ marginLeft: 10 }}>
+					<Text style={{ fontSize: 18, fontWeight: "500" }}>
+						{order.Restaurant.name}
+					</Text>
+					<Text style={{ color: "grey" }}>{order.Restaurant.address}</Text>
+					<Text style={{ marginTop: 10 }}>Delivery Details:</Text>
+					<Text style={{ color: "grey" }}>{order.User.name}</Text>
+					<Text style={{ color: "grey" }}>{order.User.address}</Text>
 				</View>
+
 				<Entypo name="check" size={30} color="black" />
 			</View>
 			<StatusBar style="auto" />
