@@ -18,7 +18,14 @@ const order = orders[0];
 export default function App() {
 	return (
 		<View style={styles.container}>
-			<View>
+			<View
+				style={{
+					flexDirection: "row",
+					borderColor: "#3FC060",
+					borderWidth: 2,
+					borderRadius: 10,
+				}}
+			>
 				<Image
 					source={{ uri: order.Restaurant.image }}
 					style={{ width: 50, height: 50 }}
