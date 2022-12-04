@@ -4,27 +4,7 @@ import orders from "./assets/data/orders.json";
 import { Entypo } from "@expo/vector-icons";
 const order = orders[0];
 export default function App() {
-	return (
-		<View style={styles.container}>
-			<View
-				style={{
-					flexDirection: "row",
-					borderColor: "#3FC060",
-					borderWidth: 2,
-					borderRadius: 10,
-				}}
-			>
-				<Image
-					source={{ uri: order.Restaurant.image }}
-					style={{ width: 50, height: 50 }}
-				/>
-				<View style={{ marginLeft: 10 }}></View>
-
-				<Entypo name="check" size={30} color="black" />
-			</View>
-			<StatusBar style="auto" />
-		</View>
-	);
+	return <View style={styles.container}></View>;
 }
 
 const styles = StyleSheet.create({
